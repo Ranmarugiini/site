@@ -1,0 +1,18 @@
+body { font-family: Arial, "Hiragino Kaku Gothic ProN", sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333;}
+header { background:#4a90e2; color:white; text-align:center; padding:20px;}
+main { max-width:800px; margin:20px auto; padding:20px; background:white; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+h1 { margin-top:0;}
+section { margin-bottom:20px; }
+.skill-box { border:1px solid #ddd; border-radius:6px; padding:10px; margin:10px 0; background:#fdfdfd; cursor:pointer;}
+.skill-box h3 { margin:0 0 6px; font-size:16px; color:#4a90e2;}
+.skill-img { display:none; margin-top:8px; }
+.skill-img img { max-width:100%; border-radius:6px; border:1px solid #ccc;}
+footer { text-align:center; color:#777; font-size:14px; margin-top:20px; padding:10px;}
+#searchInput, #probabilityFilter {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
