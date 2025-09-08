@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Pフィーバー機動戦士ガンダムユニコーン 再来",
+    "description": "通常時の当たり確率は標準的で、初心者でも当たりを狙いやすい。",
+    "image": "images/UC2.png",
+    "probability": 349.7
+  },
+  {
+    "name": "P新世紀エヴァンゲリオン～未来への咆哮～",
+    "description": "ST中は約1/99.4。アニメファンなら演出に感動間違いなし。",
+    "image": "images/eva.png",
+    "probability": 319.7
+  },
+  {
+    "name": "P Re:ゼロから始める異世界生活 鬼がかりVer.",
+    "description": "キャラの魅力と高速RUSHの爽快感が魅力。先バレ設定で当たりを予想しやすい。",
+    "image": "images/re0.png",
+    "probability": 319.7
+  },
+  {
+    "name": "P炎炎ノ消防隊～紅丸Ver.～",
+    "description": "アニメの迫力ある演出が楽しめ、RUSHの爽快感も魅力。",
+    "image": "images/enen.png",
+    "probability": 399.9
+  }
+]
