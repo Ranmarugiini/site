@@ -1,111 +1,93 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>長岡キンパ専用パチンコ攻略CH</title>
-<style>
-body {
-font-family: Arial, "Hiragino Kaku Gothic ProN", sans-serif;
-margin: 0;
-padding: 0;
-background: #f9f9f9;
-color: #333;
-}
-header {
-background: #4a90e2;
-color: white;
-text-align: center;
-padding: 20px;
-}
-main {
-max-width: 800px;
-margin: 20px auto;
-padding: 20px;
-background: white;
-border-radius: 8px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-h1 {
-margin-top: 0;
-}
-section {
-margin-bottom: 20px;
-}
-.skill-box {
-border: 1px solid #ddd;
-border-radius: 6px;
-padding: 10px;
-margin: 10px 0;
-background: #fdfdfd;
-cursor: pointer;
-}
-.skill-box h3 {
-margin: 0 0 6px;
-font-size: 16px;
-color: #4a90e2;
-}
-.skill-img {
-display: none;
-margin-top: 8px;
-}
-.skill-img img {
-max-width: 100%;
-border-radius: 6px;
-border: 1px solid #ccc;
-}
-footer {
-text-align: center;
-color: #777;
-font-size: 14px;
-margin-top: 20px;
-padding: 10px;
-}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>長岡キンパ専用パチンコ攻略CH</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>長岡キンパ専用パチンコ攻略ｃｈ</h1>
-  </header>
 
-  <main>
-    <section>
-      <h2>パチンコとは</h2>
-      <p>早い！（金がなくなるのが）</p>
-      <p>安い！（早めに当てれば）</p>
-      <p>美味い！（当たれば）</p>
-      <p>と、３拍子揃った最高の娯楽です。</p>
-    </section>
+<header>
+<h1>長岡キンパ専用パチンコ攻略CH</h1>
+</header>
 
-    <section>
-<h2>おすすめ機種（タップで画像表示）</h2>
-<div class="skill-box" onclick="toggleSkill(this)">
-<h3>1. Pフィーバー機動戦士ガンダムユニコーン 再来 -白き一角獣と黒き獅子-</h3>
-<p>1/349.7（ミドルタイプ）。通常時の当たり確率は標準的で、初心者でも当たりを狙いやすいバランス。
-初心者向けポイント：アニメの臨場感と分かりやすいRUSH突入が魅力。カスタムで演出を絞れば当たりが分かりやすく、初心者におすすめ。</p>
-  <div class="skill-img"><img src="images/UC2.png"alt="uc2"></div>
-</div>
-<div class="skill-box">
-<h3>2. P新世紀エヴァンゲリオン～未来への咆哮～</h3>
-<p>1/319.7（通常時）、高確率時（ST中）は約1/99.4。ミドルタイプで、初心者でも当たりを体感しやすい。
-初心者向けポイント：アニメファンなら演出に感動間違いなし。シンプルモードで遊べば、複雑な演出に惑わされず楽しめる。</p>
-</div>
-<div class="skill-box">
-<h3>3. P Re:ゼロから始める異世界生活 鬼がかりVer.</h3>
-<p>1/319.7（ミドルタイプ）。標準的な確率で、初心者でも当たりを狙いやすい。
-初心者向けポイント：キャラの魅力と高速RUSHの爽快感が魅力。先バレ設定で当たりを予想しやすく、初心者に最適。</p>
-</div>
-<div class="skill-box">
-<h3>4. P炎炎ノ消防隊～紅丸Ver.～</h3>
-<p>1/399.9（ミドルタイプ）。他の機種と同等の確率で、初心者でも当たりを体感しやすい。
-初心者向けポイント：アニメの迫力ある演出が楽しめ、RUSHの爽快感は初心者におすすめ。ただし、設置店舗が少ない場合があるので事前確認を。</p>
-</div>
+<main>
+<section>
+<h2>おすすめ機種検索</h2>
+<input type="text" id="searchInput" placeholder="アイテム名で検索">
+<select id="probabilityFilter">
+  <option value="all">全ての確率</option>
+  <option value="low">レア（1/350以下）</option>
+  <option value="medium">普通（1/320～1/349）</option>
+  <option value="high">当たりやすい（1/319以下）</option>
+</select>
+<div id="results"></div>
 </section>
-   
-   
+</main>
 
-  <footer>
-    <p>作成日：2025/8/27</p>
-  </footer>
+<footer>
+<p>作成日：2025/9/08</p>
+</footer>
+
+<script>
+// JSONデータ読み込み
+let items = [];
+fetch('items.json')
+  .then(res => res.json())
+  .then(data => {
+    items = data;
+    renderResults(items);
+  });
+
+// 画像表示切替
+function toggleSkill(element) {
+  const imgBox = element.querySelector(".skill-img");
+  imgBox.style.display = (imgBox.style.display === "block") ? "none" : "block";
+}
+
+// 検索＆フィルター表示
+const searchInput = document.getElementById("searchInput");
+const probabilityFilter = document.getElementById("probabilityFilter");
+const resultsDiv = document.getElementById("results");
+
+function renderResults(filteredItems) {
+  resultsDiv.innerHTML = "";
+  if (filteredItems.length === 0) {
+    resultsDiv.innerHTML = "<p>該当するアイテムはありません</p>";
+    return;
+  }
+  filteredItems.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "skill-box";
+    div.onclick = function() { toggleSkill(div); };
+    div.innerHTML = `
+      <h3>${item.name}</h3>
+      <p>${item.description}<br>確率: 1/${item.probability}</p>
+      <div class="skill-img"><img src="${item.image}" alt="${item.name}"></div>
+    `;
+    resultsDiv.appendChild(div);
+  });
+}
+
+function filterItems() {
+  const keyword = searchInput.value.toLowerCase();
+  let filtered = items.filter(item => item.name.toLowerCase().includes(keyword));
+
+  const probValue = probabilityFilter.value;
+  if (probValue !== "all") {
+    filtered = filtered.filter(item => {
+      if (probValue === "low") return item.probability > 349;
+      if (probValue === "medium") return item.probability >= 320 && item.probability <= 349;
+      if (probValue === "high") return item.probability < 320;
+    });
+  }
+  renderResults(filtered);
+}
+
+searchInput.addEventListener("input", filterItems);
+probabilityFilter.addEventListener("change", filterItems);
+</script>
+
 </body>
 </html>
