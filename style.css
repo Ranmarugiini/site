@@ -1,18 +1,108 @@
-body { font-family: Arial, "Hiragino Kaku Gothic ProN", sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333;}
-header { background:#4a90e2; color:white; text-align:center; padding:20px;}
-main { max-width:800px; margin:20px auto; padding:20px; background:white; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-h1 { margin-top:0;}
-section { margin-bottom:20px; }
-.skill-box { border:1px solid #ddd; border-radius:6px; padding:10px; margin:10px 0; background:#fdfdfd; cursor:pointer;}
-.skill-box h3 { margin:0 0 6px; font-size:16px; color:#4a90e2;}
-.skill-img { display:none; margin-top:8px; }
-.skill-img img { max-width:100%; border-radius:6px; border:1px solid #ccc;}
-footer { text-align:center; color:#777; font-size:14px; margin-top:20px; padding:10px;}
+/* Google Fonts を読み込み：日本語フォント Noto Sans JP */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* 全体のスタイル */
+body {
+  font-family: 'Noto Sans JP', sans-serif; /* フォント設定 */
+  margin: 0; /* 余白リセット */
+  padding: 0; /* 余白リセット */
+  background: #f5f6fa; /* ページ全体の背景色 */
+  color: #333; /* 文字色 */
+}
+
+/* ヘッダー部分 */
+header {
+  background: #2f3640; /* 濃いめの背景色 */
+  color: #fff; /* 文字色を白に */
+  text-align: center; /* 中央揃え */
+  padding: 25px 10px; /* 上下左右の余白 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 影を付けて立体感 */
+}
+
+header h1 {
+  font-size: 28px; /* タイトルの大きさ */
+  margin: 0; /* 上下余白なし */
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 900px; /* 最大幅を制限 */
+  margin: 25px auto; /* 上下余白25px、左右中央寄せ */
+  padding: 15px; /* 内側余白 */
+}
+
+section {
+  margin-bottom: 25px; /* セクション間の余白 */
+}
+
+/* 検索フォーム */
 #searchInput, #probabilityFilter {
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-  margin-bottom: 15px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  width: 100%; /* 横幅いっぱい */
+  padding: 10px 12px; /* 内側余白 */
+  font-size: 16px; /* フォントサイズ */
+  margin-bottom: 15px; /* 下の余白 */
+  border-radius: 8px; /* 角丸 */
+  border: 1px solid #ccc; /* 枠線 */
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.05); /* 軽い影で浮き上がり */
+}
+
+/* 各攻略カード */
+.skill-box {
+  border-radius: 10px; /* カード角丸 */
+  background: #fff; /* 白背景 */
+  padding: 15px; /* 内側余白 */
+  margin-bottom: 18px; /* 下の余白 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* 影で浮き上がり */
+  cursor: pointer; /* ホバーでクリック可能と分かる */
+  transition: transform 0.2s, box-shadow 0.2s; /* ホバー時のアニメーション */
+}
+
+/* ホバー時の効果 */
+.skill-box:hover {
+  transform: translateY(-2px); /* 少し浮く */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* 影を濃くして浮き感UP */
+}
+
+/* カード内の見出し */
+.skill-box h3 {
+  color: #0984e3; /* 青色にして目立たせる */
+  font-size: 18px; /* 見出しサイズ */
+  margin-bottom: 8px; /* 下余白 */
+}
+
+/* カード内の説明文 */
+.skill-box p {
+  font-size: 14px; /* 文字サイズ */
+  line-height: 1.5; /* 行間 */
+  color: #2d3436; /* 説明文を濃いグレーに */
+}
+
+/* 画像部分（初期は非表示） */
+.skill-img {
+  display: none; /* 初期状態で非表示 */
+  margin-top: 10px; /* 上の余白 */
+}
+
+/* 画像自体のスタイル */
+.skill-img img {
+  max-width: 100%; /* 横幅いっぱいでもはみ出さない */
+  border-radius: 8px; /* 角丸 */
+  border: 1px solid #dfe6e9; /* 薄い枠線 */
+  transition: transform 0.3s; /* ホバーで少し拡大 */
+}
+
+/* 画像ホバー時の効果 */
+.skill-img img:hover {
+  transform: scale(1.05); /* 5%拡大 */
+}
+
+/* フッター部分 */
+footer {
+  text-align: center; /* 中央揃え */
+  color: #636e72; /* 薄い文字色 */
+  font-size: 14px; /* 文字サイズ */
+  margin-top: 30px; /* 上余白 */
+  padding: 15px 10px; /* 内側余白 */
+  background: #dfe6e9; /* 薄いグレー背景 */
+  border-top: 1px solid #b2bec3; /* 上の境界線 */
 }
