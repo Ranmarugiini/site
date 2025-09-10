@@ -84,9 +84,9 @@ function filterItems() {
   const probValue = probabilityFilter.value;
   if (probValue !== "all") {
     filtered = filtered.filter(item => {
-      if (probValue === "low") return item.probability > 349;
-      if (probValue === "medium") return item.probability >= 320 && item.probability <= 349;
-      if (probValue === "high") return item.probability < 320;
+      if (probValue === "low") return item.probability > 99;
+      if (probValue === "medium") return item.probability >= 100 && item.probability <= 300;
+      if (probValue === "high") return item.probability < 301;
     });
   }
   renderResults(filtered);
