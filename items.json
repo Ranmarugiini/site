@@ -163,7 +163,7 @@
     "description": "低確率時 大当り確率約 1/199.8。ST突入率 100％、ST 継続率約72％。ライトミドル ST 機。", 
     "image": "images/Oumi4Black.png",
     "probability": 199.8
-  }
+  },
   {
     "name": "Pフィーバー機動戦士ガンダムユニコーン 再来",
     "description": "通常時の当たり確率は標準的で、初心者でも当たりを狙いやすい。",
