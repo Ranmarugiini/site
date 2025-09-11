@@ -1,33 +1,109 @@
-[
+[  
   {
-    "name": "Pフィーバー機動戦士ガンダムユニコーン 再来",
-    "description": "通常時の当たり確率は標準的で、初心者でも当たりを狙いやすい。",
-    "image": "images/UC2.png",
-    "probability": 349.7
+    "name": "eブルーロック",
+    "description": "LTでの9000発ループで脳みそ焼き尽そう",
+    "image": "images/BlueRock.png",
+    "probability": 399.9
+  }, 
+  
+  {
+    "name": "p戦国乙女７～終焉の関ヶ原～",
+    "description": "LTでの1500発ループに期待",
+    "image": "images/Otome7.png",
+    "probability": 299.9
   },
+  
+  {
+     "name": "ぱちんこ　シン・エヴァンゲリオン　premiummodel",
+    "description": "エヴァ怖かったらとりまこれ",
+    "image": "images/shinpre.png",
+    "probability": 99.9
+  },
+  
+  {
+"name": "eパリピ孔明",
+    "description": "多分おもんない",
+    "image": "images/koumei.png",
+    "probability": 319.9
+  },
+  
+  {
+  "name": "P　FAIRYTAIL超一夜ver",
+    "description": "319でこの出玉は壊れる",
+    "image": "images/tyouitiya.png",
+    "probability": 319.9
+  },
+  
+  {
+  "name": "デカスタPデビルマン　THE FINAL 179",
+    "description": "ラッシュ入るまでは苦行",
+    "image": "images/devil.png",
+    "probability": 179.55
+  },
+  
+  {
+  "name": "デじはねP頭文字D　せかんど",
+    "description": "10ラウンドで1200発、やめとこう",
+    "image": "images/Dsecond.png",
+    "probability": 99.9
+  },
+  
+  {
+  "name": "ぱちんこ　シン・エヴァンゲリオンTypeレイ",
+    "description": "結局エヴァなんよぉ",
+    "image": "images/ShinEva.png",
+    "probability": 319.9
+  },  
+  
   {
     "name": "P新世紀エヴァンゲリオン～未来への咆哮～",
     "description": "ST中は約1/99.4。アニメファンなら演出に感動間違いなし。",
     "image": "images/eva.png",
     "probability": 319.7
   },
+
+  {
+    "name": "P大海物語5",
+    "description": "楽しく1600ハマり",
+    "image": "images/Oumi5.png",
+    "probability": 319.6
+  },
+
+  {
+    "name": "e牙狼12黄金騎士極限",
+    "description": "LTで7500なんか引いたら帰りに死んじゃうよ",
+    "image": "images/Garo12.png",
+    "probability": 349.7
+  },
+  
+  {
+    "name": "e東京喰種",
+    "description": "重くて荒いけど楽しい",
+    "image": "images/guru.png",
+    "probability": 399.7
+  },
+  
+  {
+    "name": "P新世紀エヴァンゲリオン～未来への咆哮～",
+    "description": "ST中は約1/99.4。アニメファンなら演出に感動間違いなし。",
+    "image": "images/eva.png",
+    "probability": 319.7
+  },
+
+  
+
+  {
+    "name": "Pフィーバー機動戦士ガンダムユニコーン 再来",
+    "description": "通常時の当たり確率は標準的で、初心者でも当たりを狙いやすい。",
+    "image": "images/UC2.png",
+    "probability": 349.7
+  },
+
   {
     "name": "P Re:ゼロから始める異世界生活 鬼がかりVer.",
     "description": "キャラの魅力と高速RUSHの爽快感が魅力。先バレ設定で当たりを予想しやすい。",
     "image": "images/re0.png",
     "probability": 319.7
-  },
-  {
-    "name": "eブルーロック",
-    "description": "LTでの9000発ループで脳みそ焼き尽そう",
-    "image": "images/BlueRock.png",
-    "probability": 399.9
-  },
-    {
-    "name": "p戦国乙女７～終焉の関ヶ原～",
-    "description": "LTでの9000発ループで脳みそ焼き尽そう",
-    "image": "images/Otome7.png",
-    "probability": 299.9
   },
   {
     "name": "P炎炎ノ消防隊～紅丸Ver.～",
