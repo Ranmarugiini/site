@@ -85,9 +85,10 @@ function filterItems() {
   const probValue = probabilityFilter.value;
   if (probValue !== "all") {
     filtered = filtered.filter(item => {
-      if (probValue === "low") return item.probability > 100;
-      if (probValue === "medium") return item.probability >= 101 && item.probability <= 300;
-      if (probValue === "high") return item.probability < 301;
+     if (probValue === "low") return item.probability >= 319;   // ミドル（おおむね319以上）
+if (probValue === "medium") return item.probability >= 100 && item.probability < 319; // ライトミドル
+if (probValue === "high") return item.probability < 100;   // 甘デジ
+
     });
   }
   renderResults(filtered);
