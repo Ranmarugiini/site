@@ -40,12 +40,13 @@
 <script>
 // JSONデータ読み込み
 let items = [];
-fetch('items.json')
+fetch('items.json?ver=' + Date.now()) // キャッシュ対策
   .then(res => res.json())
   .then(data => {
     items = data;
     renderResults(items);
   });
+
 
 // 画像表示切替
 function toggleSkill(element) {
