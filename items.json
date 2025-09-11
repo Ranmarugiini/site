@@ -7,7 +7,7 @@
   }, 
   
   {
-    "name": "p戦国乙女７～終焉の関ヶ原～",
+    "name": "p戦国乙女７～終焉の関ヶ原～299ver",
     "description": "LTでの1500発ループに期待",
     "image": "images/Otome7.png",
     "probability": 299.9
@@ -84,14 +84,86 @@
   },
   
   {
-    "name": "P新世紀エヴァンゲリオン～未来への咆哮～",
-    "description": "ST中は約1/99.4。アニメファンなら演出に感動間違いなし。",
-    "image": "images/eva.png",
-    "probability": 319.7
+    "name": "P海物語　極JAPAN",
+    "description": "リーチ発生が少ないから少々暇",
+    "image": "images/KiwamiUmi.png",
+    "probability": 319.6
   },
 
-  
+ {
+    "name": "P Re:ゼロから始める異世界生活 Season２.",
+    "description": "先バレ設定で当たりを予想しやすい。強欲に生きよう",
+    "image": "images/re02.png",
+    "probability": 349.9
+  },  
 
+  {
+  "name": "P北斗の拳 暴凶星",
+  "description": "北斗シリーズ最新作。バトルがアツい！",
+  "image": "images/hokuto_bokyousei.png",
+  "probability": 319.7
+},
+
+    {
+    "name": "P炎炎ノ消防隊～紅丸Ver.～",
+    "description": "アニメの迫力ある演出が楽しめ、RUSHの爽快感も魅力。",
+    "image": "images/enen.png",
+    "probability": 399.9
+  },
+  {
+    "name": "eマギアレコード 魔法少女まどか☆マギカ外伝",
+    "description": "図柄揃い確率約1/399。RUSH（LT）突入率50%。RUSH中当たり確率約1/97。継続率約83%。", 
+    "image": "images/emagiareco.png",
+    "probability": 399.9
+  },
+  {
+    "name": "e東京リベンジャーズ",
+    "description": "通常時確率約1/319.7。RUSH中約1/99.9。", 
+    "image": "images/tokyorevengers.png",
+    "probability": 319.7
+  },
+  {
+    "name": "P大海物語4スペシャル",
+    "description": "通常時確率約1/319.6。高確率時1/39.7。", 
+    "image": "images/oumimono4special.png",
+    "probability": 319.6
+  },
+   {
+    "name": "e範馬刃牙",
+    "description": "通常時大当たり確率 1/499.9。バキチャージ 1/333.3。右打ち中実質確率 1/1.25。LT（バトルMODE）突入率 約50%。継続率 約80%。",
+    "image": "images/hanma_baki.png",
+    "probability": 499.9
+  },
+  {
+    "name": "e冴えない彼女の育て方",
+    "description": "通常時大当たり確率 約1/179.6。右打ち中確率 約1/35.1。RUSH突入率 51％。継続率 約80％。",
+    "image": "images/saekano.png",
+    "probability": 179.6
+  },
+  {
+    "name": "e女神のカフェテラス",
+    "description": "通常時図柄揃い確率 1/399。TERRACE CHARGE を含む合算確率 1/348。Rush（LT）突入率 約40％。",
+    "image": "images/megami_cafeterace.png",
+    "probability": 399
+  },
+   {
+    "name": "eシャーマンキング でっけぇえなver",
+    "description": "通常時大当り確率 1/349.9。ST搭載・一種二種混合機。シャーマンファイト突入率約50％、継続率約50％。LT（超シャーマンファイト）継続率約81％。", 
+    "image": "images/Shar­manKing.png",
+    "probability": 349.9
+  },
+  {
+    "name": "eぱちんこ押忍！番長 漢の頂",
+    "description": "通常時大当り確率 1/179.5。右打ち中実質確率 1/99.5。RUSH は 25％で突入。継続率約80％。", 
+    "image": "images/OssuBancho.png",
+    "probability": 179.5
+  },
+  {
+    "name": "P大海物語4スペシャル BLACK",
+    "description": "低確率時 大当り確率約 1/199.8。ST突入率 100％、ST 継続率約72％。ライトミドル ST 機。", 
+    "image": "images/Oumi4Black.png",
+    "probability": 199.8
+  }
   {
     "name": "Pフィーバー機動戦士ガンダムユニコーン 再来",
     "description": "通常時の当たり確率は標準的で、初心者でも当たりを狙いやすい。",
@@ -105,10 +177,22 @@
     "image": "images/re0.png",
     "probability": 319.7
   },
+   {
+    "name": "eマギアレコード 魔法少女まどか☆マギカ外伝",
+    "description": "通常時 約1/399（図柄揃い）、実質大当り確率 約1/349.9。LT（コネクトRUSH）突入率 50％、継続率 約83%.",
+    "image": "images/magiareco.png",
+    "probability": 349.9
+  },
   {
-    "name": "P炎炎ノ消防隊～紅丸Ver.～",
-    "description": "アニメの迫力ある演出が楽しめ、RUSHの爽快感も魅力。",
-    "image": "images/enen.png",
+    "name": "e東京リベンジャーズ",
+    "description": "通常時大当り確率 約1/319.7。RUSH中約1/99.9。時短中約1/399。継続率 約77％、突入率 約61％。",
+    "image": "images/tokyo_rev.png",
+    "probability": 319.7
+  },
+  {
+    "name": "eフィーバーからくりサーカス2 魔王ver.",
+    "description": "通常時大当り確率 約1/399.9（図柄揃い確率含む）。LT中運命の一撃発生率 約1/78。LT突入率 約52％、継続率 約80％。",
+    "image": "images/karakuri2_maou.png",
     "probability": 399.9
   }
 ]
