@@ -18,6 +18,18 @@
     "probability": 319.7
   },
   {
+    "name": "eブルーロック",
+    "description": "LTでの9000発ループで脳みそ焼き尽そう",
+    "image": "images/BlueRock.png",
+    "probability": 399.9
+  },
+    {
+    "name": "p戦国乙女７～終焉の関ヶ原～",
+    "description": "LTでの9000発ループで脳みそ焼き尽そう",
+    "image": "images/Otome7.png",
+    "probability": 299.9
+  },
+  {
     "name": "P炎炎ノ消防隊～紅丸Ver.～",
     "description": "アニメの迫力ある演出が楽しめ、RUSHの爽快感も魅力。",
     "image": "images/enen.png",
